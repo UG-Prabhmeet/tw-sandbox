@@ -26,16 +26,38 @@ body {
 }
 
 @keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-16px); }
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-16px);
+  }
 }
 @keyframes float-slow {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(12px); }
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(12px);
+  }
 }
 .animate-float {
   animation: float 4s ease-in-out infinite;
 }
 .animate-float-slow {
   animation: float-slow 6s ease-in-out infinite;
+}
+
+/* Add this to your globals.css */
+.custom-gradient {
+  background: radial-gradient(
+    ellipse at center left,
+    #000000 0%,
+    #2d2d2d 30%,
+    #f7d98d 60%,
+    #d6f5ff 80%,
+    #0099ff 100%
+  );
 }

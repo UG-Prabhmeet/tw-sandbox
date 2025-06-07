@@ -1,4 +1,5 @@
-import { FaInstagram, FaFacebookF } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { SiGmail } from "react-icons/si";
 import { FaBehance } from "react-icons/fa6";
 
 export default function Footer() {
@@ -8,18 +9,18 @@ export default function Footer() {
         {/* Left: Email */}
         <div className="flex-1">
           <div className="text-2xl md:text-3xl font-bold mb-4 md:mb-0">
-            contact@studio.com
+            DashFlow
           </div>
           <div className="text-sm text-gray-700 mt-2">
-            Manhattan, New York<br />
-            2023
+            By Prabhmeet Singh<br />
+            2025
           </div>
         </div>
         {/* Center: Office hours */}
         <div className="flex-1 flex flex-col items-start md:items-center">
-          <div className="text-2xl md:text-3xl font-bold mb-4 md:mb-0">
-            (+48) 762 864 075
-          </div>
+          <a href="#" className="text-2xl md:text-3xl font-bold mb-4 md:mb-0">
+            Go to Top
+          </a>
           <div className="text-sm text-gray-700 mt-2">
             Office hours<br />
             Monday - Friday 11 AM - 2 PM
@@ -28,23 +29,18 @@ export default function Footer() {
         {/* Right: Links & Social */}
         <div className="flex-1 flex flex-col items-start md:items-end gap-2">
           <div className="mb-2">
-            <span>Say hello </span>
-            <a href="#" className="underline font-medium">Work with us</a>
+            <a href="#" className="underline font-medium">Contact on : </a>
           </div>
           <div className="flex gap-4 text-2xl mb-2">
-            <a href="#" aria-label="Behance"><FaBehance /></a>
-            <a href="#" aria-label="Instagram"><FaInstagram /></a>
-            <a href="#" aria-label="Facebook"><FaFacebookF /></a>
-          </div>
-          <div className="text-sm text-gray-700">
-            <a href="#" className="hover:underline">Privacy Policy</a>
+            <a href="#" aria-label="GitHub"><FaGithub /></a>
+            <a href="#" aria-label="Gmail"><SiGmail /></a>
           </div>
         </div>
       </div>
       {/* Bottom: Copyright */}
       <div className="max-w-6xl mx-auto mt-8 text-xs text-gray-500 flex flex-col md:flex-row justify-between items-center gap-2">
         <span>
-          © 2023 Template by <a href="#" className="underline">Produlis Studio</a> | Photos from pexels.com
+          © 2025 <a href="#">DashFlow Inc. </a> | All rights reserved
         </span>
       </div>
     </footer>
